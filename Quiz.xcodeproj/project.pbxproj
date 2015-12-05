@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3999DFC41C12F6BE00847D1D /* ScoreBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999DFC31C12F6BE00847D1D /* ScoreBoardViewController.swift */; };
 		39C3145E1C11CC9C002CEC7B /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3145D1C11CC9C002CEC7B /* QuizTableViewCell.swift */; };
 		39C314601C11CDFA002CEC7B /* QuizTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3145F1C11CDFA002CEC7B /* QuizTableViewController.swift */; };
 		39C314621C11DA94002CEC7B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C314611C11DA94002CEC7B /* QuestionViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3999DFC31C12F6BE00847D1D /* ScoreBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreBoardViewController.swift; sourceTree = "<group>"; };
 		39C3145D1C11CC9C002CEC7B /* QuizTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
 		39C3145F1C11CDFA002CEC7B /* QuizTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizTableViewController.swift; sourceTree = "<group>"; };
 		39C314611C11DA94002CEC7B /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -66,9 +68,10 @@
 				39FDCA4E1C11596D00A1BBCC /* QuizViewController.swift */,
 				39C3145D1C11CC9C002CEC7B /* QuizTableViewCell.swift */,
 				39C3145F1C11CDFA002CEC7B /* QuizTableViewController.swift */,
-				39FDCA601C1193C200A1BBCC /* Question.swift */,
-				39FDCA501C11596D00A1BBCC /* Main.storyboard */,
 				39C314611C11DA94002CEC7B /* QuestionViewController.swift */,
+				39FDCA601C1193C200A1BBCC /* Question.swift */,
+				3999DFC31C12F6BE00847D1D /* ScoreBoardViewController.swift */,
+				39FDCA501C11596D00A1BBCC /* Main.storyboard */,
 				39FDCA531C11596D00A1BBCC /* Assets.xcassets */,
 				39FDCA551C11596D00A1BBCC /* LaunchScreen.storyboard */,
 				39FDCA581C11596D00A1BBCC /* Info.plist */,
@@ -151,6 +154,7 @@
 				39FDCA611C1193C200A1BBCC /* Question.swift in Sources */,
 				39FDCA4F1C11596D00A1BBCC /* QuizViewController.swift in Sources */,
 				39C314621C11DA94002CEC7B /* QuestionViewController.swift in Sources */,
+				3999DFC41C12F6BE00847D1D /* ScoreBoardViewController.swift in Sources */,
 				39C3145E1C11CC9C002CEC7B /* QuizTableViewCell.swift in Sources */,
 				39FDCA4D1C11596D00A1BBCC /* AppDelegate.swift in Sources */,
 				39C314601C11CDFA002CEC7B /* QuizTableViewController.swift in Sources */,

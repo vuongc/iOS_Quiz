@@ -13,17 +13,18 @@ class QuizViewController: UIViewController {
     // MARK: Properties
     @IBOutlet weak var QuestionLabel: UILabel!
     @IBOutlet var Buttons: [UIButton]!
-    @IBOutlet weak var statusLabel: UILabel!
     
     var questions = [Question]()
     var questionNumber = Int()
     var answerNumber = Int()
+    var userScore: Int = 0
+    var numberOfQuestionsDid: Int = 1
+    var defaultColor: UIColor = UIColor(red:0.40, green:0.80, blue:1.00, alpha:1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        hideStatusLabel()
         if let saveQuestions = loadQuestions() {
             questions += saveQuestions
         }
@@ -49,24 +50,24 @@ class QuizViewController: UIViewController {
     }
 
     // MARK: Actions
-    func hideStatusLabel() {
-        statusLabel.hidden = true
-    }
-    
-    func showStatusLabel() {
-        statusLabel.hidden = false
+    func setAllButtonTitleInDefaultColor(defaultColor: UIColor) {
+        for i in 0..<Buttons.count {
+            Buttons[i].backgroundColor = defaultColor
+        }
     }
     
     func controlButtonActionFunction(index: Int!) {
         if (answerNumber == index) {
-            statusLabel.text = "You are right !"
-            showStatusLabel()
+            userScore += 1
+            setAllButtonTitleInDefaultColor(defaultColor)
             pickRandomQuestion()
         }
         else {
-            statusLabel.text = "You are wrong !"
-            showStatusLabel()
+            userScore -= 1
+            setAllButtonTitleInDefaultColor(defaultColor)
+            Buttons[index].backgroundColor = UIColor.redColor()
         }
+        numberOfQuestionsDid += 1
     }
     
     @IBAction func Button1Action(sender: AnyObject) {
@@ -97,11 +98,20 @@ class QuizViewController: UIViewController {
             }
             
             questions.removeAtIndex(questionNumber)
-            hideStatusLabel()
         }
         else {
-            statusLabel.text = "You have done all the questions !"
-            showStatusLabel()
+            self.performSegueWithIdentifier("ShowScoreBoard", sender: self)
+        }
+    }
+
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowScoreBoard" {
+            let scoreBoardDetailViewController = segue.destinationViewController as! ScoreBoardViewController
+            
+            scoreBoardDetailViewController.scoreValue = "\(userScore)/\(numberOfQuestionsDid)"
         }
     }
     
