@@ -88,6 +88,15 @@ class QuizTableViewController: UITableViewController {
         }    
     }
 
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .Normal, title: "Delete") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
+            self.questions.removeAtIndex(indexPath.row)
+            self.saveQuestions()
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+        deleteAction.backgroundColor = UIColor.redColor()
+        return [deleteAction]
+    }
     /*
     // Override to support rearranging the table view.
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
@@ -125,16 +134,16 @@ class QuizTableViewController: UITableViewController {
     @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.sourceViewController as? QuestionViewController, question = sourceViewController.question {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
-                // Update an existing meal.
+                // Update an existing question.
                 questions[selectedIndexPath.row] = question
                 tableView.reloadRowsAtIndexPaths([selectedIndexPath], withRowAnimation: .None)
             } else {
-                // Add a new meal.
+                // Add a new question.
                 let newIndexPath = NSIndexPath(forRow: questions.count, inSection: 0)
                 questions.append(question)
                 tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
             }
-            // Save the meals.
+            // Save the questions.
             saveQuestions()
         }
     }
