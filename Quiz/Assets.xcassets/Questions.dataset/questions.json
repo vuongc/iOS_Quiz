@@ -1,0 +1,15 @@
+{
+    "questions": [{
+                  "question": "toto",
+                  "answers": ["i", "o", "a", "u"],
+                  "answer": 1
+                  }, {
+                  "question": "titi",
+                  "answers": ["i", "o", "a", "u"],
+                  "answer": 0
+                  }, {
+                  "question": "tata",
+                  "answers": ["i", "o", "a", "u"],
+                  "answer": 2
+                  }]
+}
