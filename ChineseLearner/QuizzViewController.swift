@@ -16,7 +16,9 @@ class QuizzViewController: UIViewController {
 
     @IBOutlet var answersButton: [UIButton]!
 
+    @IBOutlet weak var questionStack: UIStackView!
 
+    @IBOutlet var mainView: UIView!
     var words = [Word]()
     var questionNumber = 0
     var answerType = "characters"
@@ -107,7 +109,15 @@ class QuizzViewController: UIViewController {
         if rightAnswer == 0 {
             questionNumber += 1
             if (questionNumber < words.count) {
+                UIView.animateWithDuration(0.5, animations: {
+                    self.questionStack.alpha = 0.0
+                })
+                
                 prepareQuestion()
+                
+                UIView.animateWithDuration(0.5, animations: {
+                    self.questionStack.alpha = 1.0
+                })
             }
             else {
                 self.performSegueWithIdentifier("ShowResult", sender: nil)
@@ -122,7 +132,15 @@ class QuizzViewController: UIViewController {
         if rightAnswer == 1 {
             questionNumber += 1
             if (questionNumber < words.count) {
+                UIView.animateWithDuration(0.5, animations: {
+                    self.questionStack.alpha = 0.0
+                })
+
                 prepareQuestion()
+                
+                UIView.animateWithDuration(0.5, animations: {
+                    self.questionStack.alpha = 1.0
+                })
             }
             else {
                 self.performSegueWithIdentifier("ShowResult", sender: nil)
@@ -138,7 +156,15 @@ class QuizzViewController: UIViewController {
         if rightAnswer == 2 {
             questionNumber += 1
             if (questionNumber < words.count) {
+                UIView.animateWithDuration(0.5, animations: {
+                    self.questionStack.alpha = 0.0
+                })
+
                 prepareQuestion()
+                
+                UIView.animateWithDuration(0.5, animations: {
+                    self.questionStack.alpha = 1.0
+                })
             }
             else {
                 self.performSegueWithIdentifier("ShowResult", sender: nil)
@@ -154,7 +180,15 @@ class QuizzViewController: UIViewController {
         if rightAnswer == 3 {
             questionNumber += 1
             if (questionNumber < words.count) {
+                UIView.animateWithDuration(0.5, animations: {
+                    self.questionStack.alpha = 0.0
+                })
+
                 prepareQuestion()
+                
+                UIView.animateWithDuration(0.5, animations: {
+                    self.questionStack.alpha = 1.0
+                })
             }
             else {
                 self.performSegueWithIdentifier("ShowResult", sender: nil)

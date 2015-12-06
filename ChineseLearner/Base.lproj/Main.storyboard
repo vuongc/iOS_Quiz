@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ONl-oX-Dh8">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ONl-oX-Dh8">
                                 <rect key="frame" x="20" y="72" width="560" height="240"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW7-8D-weg" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
@@ -122,14 +122,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dDT-Fs-i2D">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dDT-Fs-i2D">
                                 <rect key="frame" x="20" y="72" width="560" height="189"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSK-Di-GGj">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1T-FL-dBO" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
@@ -190,7 +190,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Quizz" id="ebn-lx-MSB"/>
                     <connections>
+                        <outlet property="mainView" destination="i0t-bY-Phe" id="v7z-QJ-JpE"/>
                         <outlet property="questionLabel" destination="OSK-Di-GGj" id="bAy-Oy-Was"/>
+                        <outlet property="questionStack" destination="dDT-Fs-i2D" id="AaQ-BQ-2PM"/>
                         <outletCollection property="answersButton" destination="E1T-FL-dBO" collectionClass="NSMutableArray" id="dvG-7u-j57"/>
                         <outletCollection property="answersButton" destination="VIO-KT-iva" collectionClass="NSMutableArray" id="eOJ-7L-Goe"/>
                         <outletCollection property="answersButton" destination="6Qu-sN-cZy" collectionClass="NSMutableArray" id="XDD-4j-ZJQ"/>
@@ -221,7 +223,7 @@
                                         <rect key="frame" x="259" y="0.0" width="42" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBD-hU-kMG" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
@@ -272,7 +274,7 @@
                         <color key="sectionIndexTrackingBackgroundColor" red="0.36078431372549019" green="0.67843137254901964" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="WordTableViewCell" rowHeight="74" id="S4A-OA-NJ2" customClass="WordTableViewCell" customModule="ChineseLearner" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="74"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S4A-OA-NJ2" id="UUf-O0-a6d">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="73"/>
@@ -351,7 +353,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="luC-zT-zdT">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="luC-zT-zdT">
                                 <rect key="frame" x="20" y="72" width="560" height="213"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24J-YF-dNA">
@@ -509,7 +511,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sek-D8-MBa">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sek-D8-MBa">
                                 <rect key="frame" x="20" y="72" width="560" height="72"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3C-jg-KUF" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
@@ -616,11 +618,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WjV-6f-kmd"/>
         <segue reference="twR-up-gI4"/>
         <segue reference="tCm-LQ-CfS"/>
         <segue reference="Nxc-uY-SDh"/>
-        <segue reference="oCB-QQ-LKl"/>
+        <segue reference="SGi-y4-y4p"/>
         <segue reference="yRk-RT-2IP"/>
+        <segue reference="WjV-6f-kmd"/>
     </inferredMetricsTieBreakers>
 </document>
