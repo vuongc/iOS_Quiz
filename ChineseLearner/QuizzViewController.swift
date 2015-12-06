@@ -88,6 +88,7 @@ class QuizzViewController: UIViewController {
         
         rightAnswer = randRange(0, upper: 3)
         answersButton[rightAnswer].setTitle(words[questionNumber].getTranslation(answerType), forState: .Normal)
+        setButtonToDefaultColor()
     }
     
     func randUnusedIndex(usedIndex: [Int]) -> Int {
@@ -101,6 +102,16 @@ class QuizzViewController: UIViewController {
     
     func randRange (lower: Int , upper: Int) -> Int {
         return lower + Int(arc4random_uniform(UInt32(upper - lower + 1)))
+    }
+    
+    func setButtonToDefaultColor() {
+        for i in 0..<answersButton.count {
+            answersButton[i].backgroundColor = GenericUIButton.defaultColor
+        }
+    }
+    
+    func setButtonErrorColor(index: Int) {
+        answersButton[index].backgroundColor = UIColor.redColor()
     }
     
     // MARK: Actions
@@ -124,6 +135,8 @@ class QuizzViewController: UIViewController {
             }
         }
         else {
+            setButtonToDefaultColor()
+            setButtonErrorColor(0)
             errors += 1
         }
     }
@@ -147,6 +160,8 @@ class QuizzViewController: UIViewController {
             }
         }
         else {
+            setButtonToDefaultColor()
+            setButtonErrorColor(1)
             errors += 1
         }
 
@@ -171,6 +186,8 @@ class QuizzViewController: UIViewController {
             }
         }
         else {
+            setButtonToDefaultColor()
+            setButtonErrorColor(2)
             errors += 1
         }
 
@@ -195,6 +212,8 @@ class QuizzViewController: UIViewController {
             }
         }
         else {
+            setButtonToDefaultColor()
+            setButtonErrorColor(3)
             errors += 1
         }
 

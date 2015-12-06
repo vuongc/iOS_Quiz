@@ -10,6 +10,8 @@ import UIKit
 
 class GenericUIButton: UIButton {
 
+    static let defaultColor: UIColor = UIColor(red: 0.36, green: 0.67, blue: 0.95, alpha: 1.0)
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
