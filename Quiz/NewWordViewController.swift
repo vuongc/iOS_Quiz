@@ -1,5 +1,5 @@
 //
-//  QuestionViewController.swift
+//  NewWordViewController.swift
 //  Quiz
 //
 //  Created by Christopher Vuong on 12/4/15.
@@ -8,29 +8,31 @@
 
 import UIKit
 
-class QuestionViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
+class NewWordViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
 
     // MARK: Properties
-    @IBOutlet weak var questionLabel: UITextField!
-    @IBOutlet var answersLabel: [UITextField]!
-    @IBOutlet weak var answerLabel: UITextField!
+    @IBOutlet weak var englishLabel: UITextField!
+    @IBOutlet weak var pinyinLabel: UITextField!
+    @IBOutlet weak var characterLabel: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
-    var question: Question?
+    var word: Word?
     var answersIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        questionLabel.delegate = self
+        englishLabel.delegate = self
         
-        if let question = question {
-            questionLabel.text = question.question
-            for i in 0..<4 {
-                answersLabel[i].text = question.answers![i]
-            }
-            answerLabel.text = answersLabel[question.answer].text
+        var englishWordTab = word![Word.WordType.English.hashValue]
+        var pinyinWordTab = word![Word.WordType.Pinyin.hashValue]
+        var charracterWordTab = word![Word.WordType.Character.hashValue]
+        
+        if let word = word {
+            englishLabel.text = englishWordTab
+            pinyinLabel.text = englishWordTab[englishWordTab.count - 1]
+            characterLabel.text = word[2].word.values
         }
         
         checkValidQuestionObject()

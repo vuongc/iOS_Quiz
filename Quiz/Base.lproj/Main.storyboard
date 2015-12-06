@@ -98,7 +98,7 @@
             </objects>
             <point key="canvasLocation" x="-546" y="429"/>
         </scene>
-        <!--Your Questions-->
+        <!--Your Words-->
         <scene sceneID="RTK-r7-fHv">
             <objects>
                 <tableViewController id="rah-Td-Zl0" customClass="QuizTableViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -209,7 +209,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Your Questions" id="jL9-Dg-e5n">
+                    <navigationItem key="navigationItem" title="Your Words" id="jL9-Dg-e5n">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="I60-ax-cWX">
                             <connections>
                                 <action selector="cancel:" destination="rah-Td-Zl0" id="PbU-6Y-5zz"/>
@@ -244,7 +244,7 @@
             </objects>
             <point key="canvasLocation" x="239" y="2141"/>
         </scene>
-        <!--New Question-->
+        <!--New Word-->
         <scene sceneID="uCa-0T-bR7">
             <objects>
                 <viewController id="vxR-5I-p1f" customClass="QuestionViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -256,59 +256,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your fourth answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXz-t9-cgw">
-                                <rect key="frame" x="20" y="272" width="560" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="DHI-hi-O3F"/>
-                                    <constraint firstAttribute="width" constant="560" id="xKJ-kY-Lva"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="xKJ-kY-Lva"/>
-                                    </mask>
-                                </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your question" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbo-b7-Udm">
-                                <rect key="frame" x="20" y="72" width="560" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your first answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQr-F0-66f">
-                                <rect key="frame" x="20" y="158" width="560" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="560" id="YP2-vM-Ke5"/>
-                                    <constraint firstAttribute="height" constant="30" id="Z8R-St-Aie"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="YP2-vM-Ke5"/>
-                                    </mask>
-                                </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your second answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eL-bQ-rAb">
-                                <rect key="frame" x="20" y="196" width="560" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="2jh-E5-Ec5"/>
-                                    <constraint firstAttribute="width" constant="560" id="JVU-4s-0r6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="JVU-4s-0r6"/>
-                                    </mask>
-                                </variation>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pW-0i-fcq">
-                                <rect key="frame" x="0.0" y="110" width="600" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Answers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pW-0i-fcq">
+                                <rect key="frame" x="0.0" y="64" width="600" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -318,104 +267,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcF-Mq-Rq6">
-                                <rect key="frame" x="0.0" y="310" width="600" height="40"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="3g2-Xg-oRv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the right answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8a-MO-zEe">
-                                <rect key="frame" x="20" y="358" width="560" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="3on-gO-wYw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your third answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYi-1h-fw5">
-                                <rect key="frame" x="20" y="234" width="560" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="bcs-Vg-LZR"/>
-                                    <constraint firstAttribute="width" constant="560" id="ynq-nN-96h"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ynq-nN-96h"/>
-                                    </mask>
-                                </variation>
-                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VYi-1h-fw5" firstAttribute="top" secondItem="2eL-bQ-rAb" secondAttribute="bottom" constant="8" id="0qf-Lp-Cw3"/>
-                            <constraint firstItem="zQr-F0-66f" firstAttribute="leading" secondItem="mjX-Nm-L76" secondAttribute="leadingMargin" id="1Z0-Bg-GCD"/>
-                            <constraint firstItem="zQr-F0-66f" firstAttribute="top" secondItem="6pW-0i-fcq" secondAttribute="bottom" constant="8" id="1u7-Lg-bB6"/>
-                            <constraint firstItem="6pW-0i-fcq" firstAttribute="top" secondItem="fbo-b7-Udm" secondAttribute="bottom" constant="8" id="3KY-N9-yDU"/>
-                            <constraint firstItem="tXz-t9-cgw" firstAttribute="leading" secondItem="mjX-Nm-L76" secondAttribute="leadingMargin" id="3in-NA-yEp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wcF-Mq-Rq6" secondAttribute="trailing" constant="-20" id="CAH-JM-S3G"/>
-                            <constraint firstItem="fbo-b7-Udm" firstAttribute="trailing" secondItem="mjX-Nm-L76" secondAttribute="trailingMargin" id="ELB-ik-IIi"/>
-                            <constraint firstItem="VYi-1h-fw5" firstAttribute="leading" secondItem="mjX-Nm-L76" secondAttribute="leadingMargin" id="F7V-V9-UNp"/>
-                            <constraint firstItem="2eL-bQ-rAb" firstAttribute="top" secondItem="zQr-F0-66f" secondAttribute="bottom" constant="8" id="Fcf-Kb-Vyg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2eL-bQ-rAb" secondAttribute="trailing" id="LnE-Sa-dxA"/>
-                            <constraint firstItem="wcF-Mq-Rq6" firstAttribute="top" secondItem="tXz-t9-cgw" secondAttribute="bottom" constant="8" id="NLA-YE-3wP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6pW-0i-fcq" secondAttribute="trailing" constant="-20" id="Oe2-Pr-8Rx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tXz-t9-cgw" secondAttribute="trailing" id="QEI-fC-GoI"/>
-                            <constraint firstItem="f8a-MO-zEe" firstAttribute="top" secondItem="wcF-Mq-Rq6" secondAttribute="bottom" constant="8" id="Qp8-w3-RiP"/>
-                            <constraint firstItem="fbo-b7-Udm" firstAttribute="top" secondItem="Zkx-fh-5sw" secondAttribute="bottom" constant="8" id="Sid-v3-5OG"/>
-                            <constraint firstItem="2eL-bQ-rAb" firstAttribute="top" secondItem="zQr-F0-66f" secondAttribute="bottom" constant="8" id="Vaj-D3-wgR"/>
-                            <constraint firstItem="f8a-MO-zEe" firstAttribute="leading" secondItem="mjX-Nm-L76" secondAttribute="leadingMargin" id="WtQ-l5-JMb"/>
-                            <constraint firstItem="tXz-t9-cgw" firstAttribute="top" secondItem="VYi-1h-fw5" secondAttribute="bottom" constant="8" id="eBw-Qh-Kjr"/>
-                            <constraint firstItem="fbo-b7-Udm" firstAttribute="leading" secondItem="mjX-Nm-L76" secondAttribute="leadingMargin" id="h2V-Hg-yF2"/>
-                            <constraint firstItem="tXz-t9-cgw" firstAttribute="top" secondItem="VYi-1h-fw5" secondAttribute="bottom" constant="8" id="hBL-E8-UmM"/>
-                            <constraint firstItem="f8a-MO-zEe" firstAttribute="trailing" secondItem="mjX-Nm-L76" secondAttribute="trailingMargin" id="hCw-vO-jgd"/>
-                            <constraint firstItem="2eL-bQ-rAb" firstAttribute="leading" secondItem="mjX-Nm-L76" secondAttribute="leadingMargin" id="hlz-Ps-0hV"/>
                             <constraint firstItem="6pW-0i-fcq" firstAttribute="leading" secondItem="mjX-Nm-L76" secondAttribute="leadingMargin" constant="-20" id="iee-38-wum"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VYi-1h-fw5" secondAttribute="trailing" id="nM0-39-Xwz"/>
-                            <constraint firstItem="wcF-Mq-Rq6" firstAttribute="leading" secondItem="mjX-Nm-L76" secondAttribute="leadingMargin" constant="-20" id="oe9-vr-cbi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2eL-bQ-rAb" secondAttribute="trailing" id="os8-jc-294"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zQr-F0-66f" secondAttribute="trailing" id="tb0-mO-yQE"/>
-                            <constraint firstItem="VYi-1h-fw5" firstAttribute="top" secondItem="2eL-bQ-rAb" secondAttribute="bottom" constant="8" id="ucR-w1-cVt"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Vaj-D3-wgR"/>
-                                <exclude reference="os8-jc-294"/>
-                                <exclude reference="ucR-w1-cVt"/>
-                                <exclude reference="eBw-Qh-Kjr"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="New Question" id="FVL-3r-9L2">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fSx-IN-W2x">
-                            <connections>
-                                <action selector="cancel:" destination="vxR-5I-p1f" id="chy-hi-NYx"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="New Word" id="FVL-3r-9L2">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fSx-IN-W2x"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="a5q-Zr-L7r">
                             <connections>
                                 <segue destination="9vx-Fe-enL" kind="unwind" unwindAction="unwindToMealList:" id="1xI-Tu-wVx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="answerLabel" destination="f8a-MO-zEe" id="CCZ-ne-GcE"/>
-                        <outlet property="questionLabel" destination="fbo-b7-Udm" id="iCn-hA-3fk"/>
-                        <outlet property="saveButton" destination="a5q-Zr-L7r" id="TOY-hc-HV3"/>
-                        <outletCollection property="answersLabel" destination="zQr-F0-66f" collectionClass="NSMutableArray" id="Xrl-iC-c5h"/>
-                        <outletCollection property="answersLabel" destination="2eL-bQ-rAb" collectionClass="NSMutableArray" id="xYI-de-xuX"/>
-                        <outletCollection property="answersLabel" destination="VYi-1h-fw5" collectionClass="NSMutableArray" id="Fhc-ou-SRn"/>
-                        <outletCollection property="answersLabel" destination="tXz-t9-cgw" collectionClass="NSMutableArray" id="Nbo-SF-ash"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCj-Lc-fTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="9vx-Fe-enL" userLabel="Exit" sceneMemberID="exit"/>
