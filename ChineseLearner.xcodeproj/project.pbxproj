@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA43AF6C1C1402AA003CB3DC /* GenericUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43AF6B1C1402AA003CB3DC /* GenericUIButton.swift */; };
+		FA5681041C12BDC7005F5CCE /* QuizzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5681031C12BDC7005F5CCE /* QuizzViewController.swift */; };
+		FA5681061C12E715005F5CCE /* ChooseModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5681051C12E715005F5CCE /* ChooseModeViewController.swift */; };
+		FA5681081C12F7A9005F5CCE /* ChineseLearnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5681071C12F7A9005F5CCE /* ChineseLearnerViewController.swift */; };
+		FA56810A1C13023F005F5CCE /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5681091C13023F005F5CCE /* ResultViewController.swift */; };
+		FAA8C1F91C11C0B900E4B53D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8C1F81C11C0B900E4B53D /* AppDelegate.swift */; };
+		FAA8C1FB1C11C0B900E4B53D /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8C1FA1C11C0B900E4B53D /* WordViewController.swift */; };
+		FAA8C1FE1C11C0B900E4B53D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA8C1FC1C11C0B900E4B53D /* Main.storyboard */; };
+		FAA8C2001C11C0B900E4B53D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA8C1FF1C11C0B900E4B53D /* Assets.xcassets */; };
+		FAA8C2031C11C0B900E4B53D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA8C2011C11C0B900E4B53D /* LaunchScreen.storyboard */; };
+		FAA8C20E1C11C0B900E4B53D /* ChineseLearnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8C20D1C11C0B900E4B53D /* ChineseLearnerTests.swift */; };
+		FAA8C2191C11CB5F00E4B53D /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8C2181C11CB5F00E4B53D /* Word.swift */; };
+		FAA8C21A1C11CB5F00E4B53D /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8C2181C11CB5F00E4B53D /* Word.swift */; };
+		FAA8C21C1C11CECC00E4B53D /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8C21B1C11CECC00E4B53D /* WordTableViewCell.swift */; };
+		FAA8C21F1C11D2A300E4B53D /* WordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8C21D1C11D2A300E4B53D /* WordTableViewController.swift */; };
+		FAA8C2201C11D2A300E4B53D /* WordTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA8C21E1C11D2A300E4B53D /* WordTableViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAA8C20A1C11C0B900E4B53D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA8C1ED1C11C0B900E4B53D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA8C1F41C11C0B900E4B53D;
+			remoteInfo = ChineseLearner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA43AF6B1C1402AA003CB3DC /* GenericUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericUIButton.swift; sourceTree = "<group>"; };
+		FA5681031C12BDC7005F5CCE /* QuizzViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizzViewController.swift; sourceTree = "<group>"; };
+		FA5681051C12E715005F5CCE /* ChooseModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseModeViewController.swift; sourceTree = "<group>"; };
+		FA5681071C12F7A9005F5CCE /* ChineseLearnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChineseLearnerViewController.swift; sourceTree = "<group>"; };
+		FA5681091C13023F005F5CCE /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FAA8C1F51C11C0B900E4B53D /* ChineseLearner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseLearner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA8C1F81C11C0B900E4B53D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA8C1FA1C11C0B900E4B53D /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		FAA8C1FD1C11C0B900E4B53D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA8C1FF1C11C0B900E4B53D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA8C2021C11C0B900E4B53D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA8C2041C11C0B900E4B53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA8C2091C11C0B900E4B53D /* ChineseLearnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseLearnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA8C20D1C11C0B900E4B53D /* ChineseLearnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseLearnerTests.swift; sourceTree = "<group>"; };
+		FAA8C20F1C11C0B900E4B53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA8C2181C11CB5F00E4B53D /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		FAA8C21B1C11CECC00E4B53D /* WordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		FAA8C21D1C11D2A300E4B53D /* WordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewController.swift; sourceTree = "<group>"; };
+		FAA8C21E1C11D2A300E4B53D /* WordTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordTableViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA8C1F21C11C0B900E4B53D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA8C2061C11C0B900E4B53D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAA8C1EC1C11C0B900E4B53D = {
+			isa = PBXGroup;
+			children = (
+				FAA8C1F71C11C0B900E4B53D /* ChineseLearner */,
+				FAA8C20C1C11C0B900E4B53D /* ChineseLearnerTests */,
+				FAA8C1F61C11C0B900E4B53D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA8C1F61C11C0B900E4B53D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8C1F51C11C0B900E4B53D /* ChineseLearner.app */,
+				FAA8C2091C11C0B900E4B53D /* ChineseLearnerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA8C1F71C11C0B900E4B53D /* ChineseLearner */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8C1F81C11C0B900E4B53D /* AppDelegate.swift */,
+				FA5681031C12BDC7005F5CCE /* QuizzViewController.swift */,
+				FA5681051C12E715005F5CCE /* ChooseModeViewController.swift */,
+				FA5681071C12F7A9005F5CCE /* ChineseLearnerViewController.swift */,
+				FAA8C1FA1C11C0B900E4B53D /* WordViewController.swift */,
+				FAA8C1FC1C11C0B900E4B53D /* Main.storyboard */,
+				FA43AF6B1C1402AA003CB3DC /* GenericUIButton.swift */,
+				FA5681091C13023F005F5CCE /* ResultViewController.swift */,
+				FAA8C21D1C11D2A300E4B53D /* WordTableViewController.swift */,
+				FAA8C21E1C11D2A300E4B53D /* WordTableViewController.xib */,
+				FAA8C21B1C11CECC00E4B53D /* WordTableViewCell.swift */,
+				FAA8C2181C11CB5F00E4B53D /* Word.swift */,
+				FAA8C1FF1C11C0B900E4B53D /* Assets.xcassets */,
+				FAA8C2011C11C0B900E4B53D /* LaunchScreen.storyboard */,
+				FAA8C2041C11C0B900E4B53D /* Info.plist */,
+			);
+			path = ChineseLearner;
+			sourceTree = "<group>";
+		};
+		FAA8C20C1C11C0B900E4B53D /* ChineseLearnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8C20D1C11C0B900E4B53D /* ChineseLearnerTests.swift */,
+				FAA8C20F1C11C0B900E4B53D /* Info.plist */,
+			);
+			path = ChineseLearnerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA8C1F41C11C0B900E4B53D /* ChineseLearner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA8C2121C11C0B900E4B53D /* Build configuration list for PBXNativeTarget "ChineseLearner" */;
+			buildPhases = (
+				FAA8C1F11C11C0B900E4B53D /* Sources */,
+				FAA8C1F21C11C0B900E4B53D /* Frameworks */,
+				FAA8C1F31C11C0B900E4B53D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChineseLearner;
+			productName = ChineseLearner;
+			productReference = FAA8C1F51C11C0B900E4B53D /* ChineseLearner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAA8C2081C11C0B900E4B53D /* ChineseLearnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA8C2151C11C0B900E4B53D /* Build configuration list for PBXNativeTarget "ChineseLearnerTests" */;
+			buildPhases = (
+				FAA8C2051C11C0B900E4B53D /* Sources */,
+				FAA8C2061C11C0B900E4B53D /* Frameworks */,
+				FAA8C2071C11C0B900E4B53D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA8C20B1C11C0B900E4B53D /* PBXTargetDependency */,
+			);
+			name = ChineseLearnerTests;
+			productName = ChineseLearnerTests;
+			productReference = FAA8C2091C11C0B900E4B53D /* ChineseLearnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA8C1ED1C11C0B900E4B53D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Alex Michaux";
+				TargetAttributes = {
+					FAA8C1F41C11C0B900E4B53D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					FAA8C2081C11C0B900E4B53D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = FAA8C1F41C11C0B900E4B53D;
+					};
+				};
+			};
+			buildConfigurationList = FAA8C1F01C11C0B900E4B53D /* Build configuration list for PBXProject "ChineseLearner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA8C1EC1C11C0B900E4B53D;
+			productRefGroup = FAA8C1F61C11C0B900E4B53D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA8C1F41C11C0B900E4B53D /* ChineseLearner */,
+				FAA8C2081C11C0B900E4B53D /* ChineseLearnerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA8C1F31C11C0B900E4B53D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA8C2031C11C0B900E4B53D /* LaunchScreen.storyboard in Resources */,
+				FAA8C2001C11C0B900E4B53D /* Assets.xcassets in Resources */,
+				FAA8C1FE1C11C0B900E4B53D /* Main.storyboard in Resources */,
+				FAA8C2201C11D2A300E4B53D /* WordTableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA8C2071C11C0B900E4B53D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA8C1F11C11C0B900E4B53D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA8C21F1C11D2A300E4B53D /* WordTableViewController.swift in Sources */,
+				FAA8C1FB1C11C0B900E4B53D /* WordViewController.swift in Sources */,
+				FA5681041C12BDC7005F5CCE /* QuizzViewController.swift in Sources */,
+				FA43AF6C1C1402AA003CB3DC /* GenericUIButton.swift in Sources */,
+				FAA8C21C1C11CECC00E4B53D /* WordTableViewCell.swift in Sources */,
+				FA5681081C12F7A9005F5CCE /* ChineseLearnerViewController.swift in Sources */,
+				FAA8C1F91C11C0B900E4B53D /* AppDelegate.swift in Sources */,
+				FA5681061C12E715005F5CCE /* ChooseModeViewController.swift in Sources */,
+				FAA8C2191C11CB5F00E4B53D /* Word.swift in Sources */,
+				FA56810A1C13023F005F5CCE /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA8C2051C11C0B900E4B53D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA8C20E1C11C0B900E4B53D /* ChineseLearnerTests.swift in Sources */,
+				FAA8C21A1C11CB5F00E4B53D /* Word.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAA8C20B1C11C0B900E4B53D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA8C1F41C11C0B900E4B53D /* ChineseLearner */;
+			targetProxy = FAA8C20A1C11C0B900E4B53D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAA8C1FC1C11C0B900E4B53D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA8C1FD1C11C0B900E4B53D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA8C2011C11C0B900E4B53D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA8C2021C11C0B900E4B53D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA8C2101C11C0B900E4B53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA8C2111C11C0B900E4B53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA8C2131C11C0B900E4B53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChineseLearner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChineseLearner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAA8C2141C11C0B900E4B53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChineseLearner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChineseLearner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAA8C2161C11C0B900E4B53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChineseLearnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChineseLearnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChineseLearner.app/ChineseLearner";
+			};
+			name = Debug;
+		};
+		FAA8C2171C11C0B900E4B53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChineseLearnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChineseLearnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChineseLearner.app/ChineseLearner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA8C1F01C11C0B900E4B53D /* Build configuration list for PBXProject "ChineseLearner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA8C2101C11C0B900E4B53D /* Debug */,
+				FAA8C2111C11C0B900E4B53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA8C2121C11C0B900E4B53D /* Build configuration list for PBXNativeTarget "ChineseLearner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA8C2131C11C0B900E4B53D /* Debug */,
+				FAA8C2141C11C0B900E4B53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA8C2151C11C0B900E4B53D /* Build configuration list for PBXNativeTarget "ChineseLearnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA8C2161C11C0B900E4B53D /* Debug */,
+				FAA8C2171C11C0B900E4B53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA8C1ED1C11C0B900E4B53D /* Project object */;
+}

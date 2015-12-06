@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MPa-Bf-adh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Type of Quizz-->
+        <scene sceneID="c1J-11-Oy5">
+            <objects>
+                <viewController id="oyq-Wn-28o" customClass="ChooseModeViewController" customModule="ChineseLearner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mKD-Ah-SXo"/>
+                        <viewControllerLayoutGuide type="bottom" id="5RV-nu-DmK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0gr-Zw-kgL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ONl-oX-Dh8">
+                                <rect key="frame" x="20" y="72" width="560" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW7-8D-weg" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="English -&gt; Pinyin"/>
+                                        <connections>
+                                            <segue destination="zMm-S9-iXe" kind="show" identifier="SetModeEngToPin" id="Lzc-uV-8V0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6H-Xm-fvt" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="42" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="English -&gt; Chinese Characters"/>
+                                        <connections>
+                                            <segue destination="zMm-S9-iXe" kind="show" identifier="SetModeEngToChar" id="PYM-Q5-wGH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hI-fx-DiI" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="84" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Pinyin -&gt; English"/>
+                                        <connections>
+                                            <segue destination="zMm-S9-iXe" kind="show" identifier="SetModePinToEng" id="Bfw-t2-ufB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pff-NU-K6d" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="126" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Pinyin -&gt; Chinese Characters"/>
+                                        <connections>
+                                            <segue destination="zMm-S9-iXe" kind="show" identifier="SetModePinToChar" id="oCB-QQ-LKl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uto-ze-b4m" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="168" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Chinese Characters -&gt; English"/>
+                                        <connections>
+                                            <segue destination="zMm-S9-iXe" kind="show" identifier="SetModeCharToEng" id="i0B-5J-8c6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDk-P1-A0e" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="210" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Chinese Characters -&gt; Pinyin"/>
+                                        <connections>
+                                            <segue destination="zMm-S9-iXe" kind="show" identifier="SetModeCharToPin" id="hDW-dT-b5q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="Pff-NU-K6d" firstAttribute="leading" secondItem="ONl-oX-Dh8" secondAttribute="leading" id="3mo-Kk-707"/>
+                                    <constraint firstAttribute="trailing" secondItem="cDk-P1-A0e" secondAttribute="trailing" id="4lM-pM-5fi"/>
+                                    <constraint firstItem="i6H-Xm-fvt" firstAttribute="leading" secondItem="ONl-oX-Dh8" secondAttribute="leading" id="52N-Kx-HE2"/>
+                                    <constraint firstItem="Uto-ze-b4m" firstAttribute="leading" secondItem="ONl-oX-Dh8" secondAttribute="leading" id="6ka-8d-Wa6"/>
+                                    <constraint firstAttribute="trailing" secondItem="1hI-fx-DiI" secondAttribute="trailing" id="DCw-YH-AaI"/>
+                                    <constraint firstItem="1hI-fx-DiI" firstAttribute="leading" secondItem="ONl-oX-Dh8" secondAttribute="leading" id="J3f-1z-VQf"/>
+                                    <constraint firstAttribute="trailing" secondItem="dW7-8D-weg" secondAttribute="trailing" id="PG1-bV-zh1"/>
+                                    <constraint firstAttribute="trailing" secondItem="i6H-Xm-fvt" secondAttribute="trailing" id="e89-VO-rPl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uto-ze-b4m" secondAttribute="trailing" id="oYy-pP-Cpm"/>
+                                    <constraint firstItem="cDk-P1-A0e" firstAttribute="leading" secondItem="ONl-oX-Dh8" secondAttribute="leading" id="tj0-5n-hbx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pff-NU-K6d" secondAttribute="trailing" id="x2B-7e-aLv"/>
+                                    <constraint firstItem="dW7-8D-weg" firstAttribute="leading" secondItem="ONl-oX-Dh8" secondAttribute="leading" id="zr6-7M-mVv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.89803921568627454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ONl-oX-Dh8" firstAttribute="top" secondItem="mKD-Ah-SXo" secondAttribute="bottom" constant="8" id="CqC-tX-Lat"/>
+                            <constraint firstItem="ONl-oX-Dh8" firstAttribute="leading" secondItem="0gr-Zw-kgL" secondAttribute="leadingMargin" id="G74-Tq-Caw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ONl-oX-Dh8" secondAttribute="trailing" id="a1R-eB-FCf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Type of Quizz" id="JTA-nV-wRx"/>
+                    <connections>
+                        <outletCollection property="modeButtons" destination="dW7-8D-weg" collectionClass="NSMutableArray" id="YSB-4T-SMk"/>
+                        <outletCollection property="modeButtons" destination="i6H-Xm-fvt" collectionClass="NSMutableArray" id="810-R2-v8G"/>
+                        <outletCollection property="modeButtons" destination="1hI-fx-DiI" collectionClass="NSMutableArray" id="nbL-ox-2CS"/>
+                        <outletCollection property="modeButtons" destination="Pff-NU-K6d" collectionClass="NSMutableArray" id="LDX-0a-TuF"/>
+                        <outletCollection property="modeButtons" destination="Uto-ze-b4m" collectionClass="NSMutableArray" id="6nA-ya-6KV"/>
+                        <outletCollection property="modeButtons" destination="cDk-P1-A0e" collectionClass="NSMutableArray" id="Q4T-33-5fR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pgb-17-Syl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="-385"/>
+        </scene>
+        <!--Quizz-->
+        <scene sceneID="sab-DW-peQ">
+            <objects>
+                <viewController title="Quizz" id="zMm-S9-iXe" customClass="QuizzViewController" customModule="ChineseLearner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SsB-mV-1Br"/>
+                        <viewControllerLayoutGuide type="bottom" id="qWC-Ng-Ojn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i0t-bY-Phe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dDT-Fs-i2D">
+                                <rect key="frame" x="20" y="72" width="560" height="189"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSK-Di-GGj">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1T-FL-dBO" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="33" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerOne:" destination="zMm-S9-iXe" eventType="touchUpInside" id="4fr-9g-YG5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIO-KT-iva" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerTwo:" destination="zMm-S9-iXe" eventType="touchUpInside" id="F1c-3M-9mB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qu-sN-cZy" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="117" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerThree:" destination="zMm-S9-iXe" eventType="touchUpInside" id="Qvx-QE-uoY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5E-zn-5mA" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="159" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerFour:" destination="zMm-S9-iXe" eventType="touchUpInside" id="xWI-zS-rPO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="E1T-FL-dBO" secondAttribute="trailing" id="0Bi-JB-3Jy"/>
+                                    <constraint firstItem="VIO-KT-iva" firstAttribute="leading" secondItem="dDT-Fs-i2D" secondAttribute="leading" id="24w-97-ZBj"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Qu-sN-cZy" secondAttribute="trailing" id="HJZ-ym-LMM"/>
+                                    <constraint firstItem="Y5E-zn-5mA" firstAttribute="leading" secondItem="dDT-Fs-i2D" secondAttribute="leading" id="IVc-9C-Q5P"/>
+                                    <constraint firstAttribute="trailing" secondItem="OSK-Di-GGj" secondAttribute="trailing" id="Iqb-JN-ALU"/>
+                                    <constraint firstItem="E1T-FL-dBO" firstAttribute="leading" secondItem="dDT-Fs-i2D" secondAttribute="leading" id="SaR-df-CFf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y5E-zn-5mA" secondAttribute="trailing" id="UM0-hr-nYa"/>
+                                    <constraint firstAttribute="trailing" secondItem="VIO-KT-iva" secondAttribute="trailing" id="cPN-XO-hPu"/>
+                                    <constraint firstItem="OSK-Di-GGj" firstAttribute="leading" secondItem="dDT-Fs-i2D" secondAttribute="leading" id="x4i-4N-9H3"/>
+                                    <constraint firstItem="6Qu-sN-cZy" firstAttribute="leading" secondItem="dDT-Fs-i2D" secondAttribute="leading" id="yz3-mQ-h3b"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.89803921568627454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dDT-Fs-i2D" secondAttribute="trailing" id="ItV-5d-4Uz"/>
+                            <constraint firstItem="dDT-Fs-i2D" firstAttribute="leading" secondItem="i0t-bY-Phe" secondAttribute="leadingMargin" id="fOx-ja-At9"/>
+                            <constraint firstItem="dDT-Fs-i2D" firstAttribute="top" secondItem="SsB-mV-1Br" secondAttribute="bottom" constant="8" id="oak-KL-O9e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quizz" id="ebn-lx-MSB"/>
+                    <connections>
+                        <outlet property="questionLabel" destination="OSK-Di-GGj" id="bAy-Oy-Was"/>
+                        <outletCollection property="answersButton" destination="E1T-FL-dBO" collectionClass="NSMutableArray" id="dvG-7u-j57"/>
+                        <outletCollection property="answersButton" destination="VIO-KT-iva" collectionClass="NSMutableArray" id="eOJ-7L-Goe"/>
+                        <outletCollection property="answersButton" destination="6Qu-sN-cZy" collectionClass="NSMutableArray" id="XDD-4j-ZJQ"/>
+                        <outletCollection property="answersButton" destination="Y5E-zn-5mA" collectionClass="NSMutableArray" id="C7u-qj-YwY"/>
+                        <segue destination="Od3-Tl-YcP" kind="show" identifier="ShowResult" id="Nxc-uY-SDh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Efw-m4-hGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="-385"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="Z0s-S7-8zH">
+            <objects>
+                <viewController id="Od3-Tl-YcP" customClass="ResultViewController" customModule="ChineseLearner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bET-RC-61W"/>
+                        <viewControllerLayoutGuide type="bottom" id="0kN-D3-R1j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dP5-By-jym">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dmH-Aa-0U9">
+                                <rect key="frame" x="20" y="72" width="560" height="79"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ts-5S-igO">
+                                        <rect key="frame" x="259" y="0.0" width="42" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBD-hU-kMG" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="193" y="41" width="175" height="38"/>
+                                        <animations/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Go Back to Main Menu"/>
+                                        <connections>
+                                            <segue destination="vLn-hr-rWR" kind="show" id="tCm-LQ-CfS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="TBD-hU-kMG" firstAttribute="top" secondItem="3ts-5S-igO" secondAttribute="bottom" constant="20" id="6kD-rG-TJU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.89803921568627454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dmH-Aa-0U9" firstAttribute="top" secondItem="dP5-By-jym" secondAttribute="topMargin" constant="72" id="CC3-FB-vEu"/>
+                            <constraint firstItem="dmH-Aa-0U9" firstAttribute="leading" secondItem="dP5-By-jym" secondAttribute="leadingMargin" id="cUZ-73-ih1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dmH-Aa-0U9" secondAttribute="trailing" id="mWn-3n-pXh"/>
+                            <constraint firstItem="dmH-Aa-0U9" firstAttribute="top" secondItem="dP5-By-jym" secondAttribute="topMargin" constant="72" id="qR2-6y-CBV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Result" id="9a2-mn-PDJ"/>
+                    <connections>
+                        <outlet property="backButton" destination="TBD-hU-kMG" id="zKa-Oj-2G8"/>
+                        <outlet property="resultLabel" destination="3ts-5S-igO" id="e1Q-e3-8XH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76V-s3-Ptg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="-1683"/>
+        </scene>
+        <!--Dictionary-->
+        <scene sceneID="YiY-ly-cHl">
+            <objects>
+                <tableViewController id="AXx-5U-yqf" customClass="WordTableViewController" customModule="ChineseLearner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="28" sectionFooterHeight="28" id="t9V-5x-AKg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.80000000000000004" green="0.89803921568627454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.36078431372549019" green="0.67843137254901964" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="WordTableViewCell" rowHeight="74" id="S4A-OA-NJ2" customClass="WordTableViewCell" customModule="ChineseLearner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="74"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S4A-OA-NJ2" id="UUf-O0-a6d">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="73"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liY-Jm-EOc">
+                                            <rect key="frame" x="8" y="8" width="584" height="29"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" red="0.0" green="0.016062608867891903" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkO-uZ-3HA">
+                                            <rect key="frame" x="304" y="45" width="288" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJi-Mw-jom">
+                                            <rect key="frame" x="8" y="45" width="288" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="liY-Jm-EOc" firstAttribute="top" secondItem="UUf-O0-a6d" secondAttribute="topMargin" id="0uJ-rx-Pau"/>
+                                        <constraint firstItem="WkO-uZ-3HA" firstAttribute="leading" secondItem="zJi-Mw-jom" secondAttribute="trailing" constant="8" id="2ev-se-cNz"/>
+                                        <constraint firstItem="zJi-Mw-jom" firstAttribute="top" secondItem="liY-Jm-EOc" secondAttribute="bottom" constant="8" id="COQ-cJ-AlB"/>
+                                        <constraint firstItem="liY-Jm-EOc" firstAttribute="trailing" secondItem="UUf-O0-a6d" secondAttribute="trailingMargin" id="Hf1-fe-t1I"/>
+                                        <constraint firstItem="WkO-uZ-3HA" firstAttribute="top" secondItem="liY-Jm-EOc" secondAttribute="bottom" constant="8" id="cdE-sI-DC2"/>
+                                        <constraint firstItem="liY-Jm-EOc" firstAttribute="leading" secondItem="UUf-O0-a6d" secondAttribute="leadingMargin" id="dJJ-UK-Cs9"/>
+                                        <constraint firstAttribute="centerX" secondItem="WkO-uZ-3HA" secondAttribute="leading" constant="-4" id="ddn-aJ-geK"/>
+                                        <constraint firstItem="zJi-Mw-jom" firstAttribute="leading" secondItem="UUf-O0-a6d" secondAttribute="leadingMargin" id="jGh-Sd-oQ3"/>
+                                        <constraint firstItem="WkO-uZ-3HA" firstAttribute="trailing" secondItem="UUf-O0-a6d" secondAttribute="trailingMargin" id="sS3-WX-JJq"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="charactersLabel" destination="WkO-uZ-3HA" id="4Cv-21-K9e"/>
+                                    <outlet property="englishLabel" destination="liY-Jm-EOc" id="mUQ-ho-okr"/>
+                                    <outlet property="pinyinsLabel" destination="zJi-Mw-jom" id="E1s-3I-IGX"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="Aac-Gh-MD4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AXx-5U-yqf" id="5nD-Iu-kjl"/>
+                            <outlet property="delegate" destination="AXx-5U-yqf" id="2sA-vI-aYl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Dictionary" id="DAb-Vw-VV2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wST-Rk-jTb">
+                            <connections>
+                                <segue destination="Nyv-74-0w3" kind="presentation" identifier="AddItem" id="UeC-pr-g64"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zC-PU-B1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="390"/>
+        </scene>
+        <!--New Word-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WordViewController" customModule="ChineseLearner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="luC-zT-zdT">
+                                <rect key="frame" x="20" y="72" width="560" height="213"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24J-YF-dNA">
+                                        <rect key="frame" x="248" y="0.0" width="65" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter english word here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gz-uU-daf">
+                                        <rect key="frame" x="0.0" y="33" width="560" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese Pinyin :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCz-8k-6Wg">
+                                        <rect key="frame" x="220" y="75" width="121" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the translation in pinyin here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="up2-zx-eV7">
+                                        <rect key="frame" x="0.0" y="108" width="560" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese Characters :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFn-ic-SCw">
+                                        <rect key="frame" x="200" y="150" width="160" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the translation in chinese characters here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uAW-wD-A9J">
+                                        <rect key="frame" x="0.0" y="183" width="560" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="up2-zx-eV7" secondAttribute="trailing" id="3ae-Pn-3Rw"/>
+                                    <constraint firstAttribute="trailing" secondItem="2gz-uU-daf" secondAttribute="trailing" id="88d-8t-BEb"/>
+                                    <constraint firstItem="up2-zx-eV7" firstAttribute="leading" secondItem="luC-zT-zdT" secondAttribute="leading" id="In3-MM-Wl0"/>
+                                    <constraint firstAttribute="trailing" secondItem="uAW-wD-A9J" secondAttribute="trailing" id="KOe-wp-z2a"/>
+                                    <constraint firstItem="2gz-uU-daf" firstAttribute="leading" secondItem="luC-zT-zdT" secondAttribute="leading" id="Z5J-Yo-L5O"/>
+                                    <constraint firstItem="uAW-wD-A9J" firstAttribute="leading" secondItem="luC-zT-zdT" secondAttribute="leading" id="tXq-Co-sUe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.89803921568627454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="luC-zT-zdT" secondAttribute="trailing" id="9Dv-3l-zGg"/>
+                            <constraint firstItem="luC-zT-zdT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="sRf-ru-1A7"/>
+                            <constraint firstItem="luC-zT-zdT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="skd-m0-9r8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Word" id="OV6-Be-1wv">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cxn-MW-4wG">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="Iii-Ez-7eh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Rz6-Mk-rB3">
+                            <connections>
+                                <segue destination="nEo-F2-dPo" kind="unwind" unwindAction="unwindToMealList:" id="4Mj-zn-FLb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="characterTextField" destination="uAW-wD-A9J" id="LUi-QS-GBh"/>
+                        <outlet property="charactersLabel" destination="xFn-ic-SCw" id="Jr0-Xu-0O9"/>
+                        <outlet property="englishLabel" destination="24J-YF-dNA" id="QcA-YB-6IB"/>
+                        <outlet property="englishTextField" destination="2gz-uU-daf" id="VAD-Y9-Uqg"/>
+                        <outlet property="pinyinLabel" destination="VCz-8k-6Wg" id="9mW-O3-FUK"/>
+                        <outlet property="pinyinTextField" destination="up2-zx-eV7" id="qDJ-06-CtL"/>
+                        <outlet property="saveButton" destination="Rz6-Mk-rB3" id="EzN-eF-6iY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="nEo-F2-dPo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="390"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W2A-dP-bk7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l8h-6n-DIc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jUy-LU-frw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AXx-5U-yqf" kind="relationship" relationship="rootViewController" id="xYW-0Q-94n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Aj-ed-2NU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="649"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UsS-hR-YI6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nyv-74-0w3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uTM-hf-mcj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WjV-6f-kmd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEg-xT-KL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cmD-X6-SG8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T1Z-A7-U2a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N3J-wC-fe8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zMm-S9-iXe" kind="relationship" relationship="rootViewController" id="SGi-y4-y4p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIy-zJ-8WY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="-1336"/>
+        </scene>
+        <!--Chinese Learner-->
+        <scene sceneID="4VU-9j-VFy">
+            <objects>
+                <viewController id="vLn-hr-rWR" customClass="ChineseLearnerViewController" customModule="ChineseLearner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yag-xX-72j"/>
+                        <viewControllerLayoutGuide type="bottom" id="n4S-63-10F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vf4-5R-nCb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sek-D8-MBa">
+                                <rect key="frame" x="20" y="72" width="560" height="72"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3C-jg-KUF" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Quizz !"/>
+                                        <connections>
+                                            <segue destination="oyq-Wn-28o" kind="show" id="yRk-RT-2IP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szP-Te-Jbo" customClass="GenericUIButton" customModule="ChineseLearner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="42" width="560" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Dictionary Management"/>
+                                        <connections>
+                                            <segue destination="AXx-5U-yqf" kind="show" identifier="ShowDictionary" id="twR-up-gI4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="E3C-jg-KUF" secondAttribute="trailing" id="CCr-pN-kwH"/>
+                                    <constraint firstItem="E3C-jg-KUF" firstAttribute="leading" secondItem="sek-D8-MBa" secondAttribute="leading" id="aql-Ry-AMe"/>
+                                    <constraint firstItem="szP-Te-Jbo" firstAttribute="leading" secondItem="sek-D8-MBa" secondAttribute="leading" id="eiB-Vu-AJQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="szP-Te-Jbo" secondAttribute="trailing" id="whu-WT-ZjQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.89803921568627454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sek-D8-MBa" firstAttribute="leading" secondItem="vf4-5R-nCb" secondAttribute="leadingMargin" id="4KK-jp-Q5z"/>
+                            <constraint firstItem="sek-D8-MBa" firstAttribute="top" secondItem="yag-xX-72j" secondAttribute="bottom" constant="8" id="Wg4-yu-Kp6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sek-D8-MBa" secondAttribute="trailing" id="u6v-xC-9ta"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chinese Learner" id="qnQ-Dq-PTu"/>
+                    <connections>
+                        <outletCollection property="menuButtons" destination="szP-Te-Jbo" collectionClass="NSMutableArray" id="spC-bT-3a4"/>
+                        <outletCollection property="menuButtons" destination="E3C-jg-KUF" collectionClass="NSMutableArray" id="aeK-vj-dwc"/>
+                        <outletCollection property="menuButtons" destination="szP-Te-Jbo" collectionClass="NSMutableArray" id="9ra-ch-HIS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FP4-JK-Kdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1064" y="-51"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IQB-05-ezP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rDu-bS-vw8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hiT-Qa-ugO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oyq-Wn-28o" kind="relationship" relationship="rootViewController" id="dYP-Sy-KeI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irg-DP-4Xo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="-745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kTA-Db-dqg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MPa-Bf-adh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FdM-Oj-GW2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vLn-hr-rWR" kind="relationship" relationship="rootViewController" id="WPd-A8-2dw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTa-KO-Pk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1747" y="-51"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fha-Cw-1fr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ph1-PK-fvG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l0G-NS-H4P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Od3-Tl-YcP" kind="relationship" relationship="rootViewController" id="xL7-lQ-tRl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdk-dT-wTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="-2468"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="twR-up-gI4"/>
+        <segue reference="tCm-LQ-CfS"/>
+        <segue reference="Nxc-uY-SDh"/>
+        <segue reference="oCB-QQ-LKl"/>
+        <segue reference="yRk-RT-2IP"/>
+        <segue reference="Aac-Gh-MD4"/>
+    </inferredMetricsTieBreakers>
+</document>
