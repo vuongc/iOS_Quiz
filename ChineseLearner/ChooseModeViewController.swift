@@ -33,8 +33,8 @@ class ChooseModeViewController: UIViewController {
         
         switch segue.identifier! {
         case "SetModeEngToPin" :
-                quizzViewController.questionType = "english"
-                quizzViewController.answerType = "pinyins"
+            quizzViewController.questionType = "english"
+            quizzViewController.answerType = "pinyins"
         case "SetModeEngToChar" :
             quizzViewController.questionType = "english"
             quizzViewController.answerType = "characters"

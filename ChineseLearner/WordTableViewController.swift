@@ -95,7 +95,7 @@ class WordTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+    @IBAction func unwindToWordList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.sourceViewController as? WordViewController, word = sourceViewController.word {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
                 words[selectedIndexPath.row] = word
